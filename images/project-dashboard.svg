@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" aria-label="Finance dashboard screenshot placeholder">
+  <rect width="640" height="440" fill="#12171c"/>
+  <rect x="24" y="24" width="120" height="392" rx="12" fill="#1a2026" stroke="#2a323b"/>
+  <g fill="#3a434c"><rect x="40" y="52" width="88" height="10" rx="5"/><rect x="40" y="84" width="70" height="10" rx="5"/><rect x="40" y="116" width="80" height="10" rx="5"/><rect x="40" y="148" width="60" height="10" rx="5"/></g>
+  <rect x="164" y="24" width="452" height="90" rx="12" fill="#1a2026" stroke="#2a323b"/>
+  <text x="184" y="56" font-family="Arial" font-size="12" fill="#8b95a0" letter-spacing="2">TOTAL BALANCE</text>
+  <text x="184" y="92" font-family="Arial" font-size="30" fill="#f2f4f6">$24,860.50</text>
+  <rect x="164" y="130" width="452" height="286" rx="12" fill="#1a2026" stroke="#2a323b"/>
+  <g fill="#c8cfd6">
+    <rect x="196" y="320" width="28" height="64" rx="4"/><rect x="240" y="290" width="28" height="94" rx="4"/>
+    <rect x="284" y="300" width="28" height="84" rx="4"/><rect x="328" y="250" width="28" height="134" rx="4"/>
+    <rect x="372" y="270" width="28" height="114" rx="4"/><rect x="416" y="210" width="28" height="174" rx="4"/>
+    <rect x="460" y="230" width="28" height="154" rx="4"/><rect x="504" y="170" width="28" height="214" rx="4"/>
+    <rect x="548" y="190" width="28" height="194" rx="4"/>
+  </g>
+</svg>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Planner | Felicity Nguher Iorlaha</title>
+  <meta name="description" content="Interactive academic planner: add, complete and delete tasks.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/planner.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="logo" href="index.html" aria-label="Home">FNI</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+        aria-controls="nav-menu"><span></span></button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link active" href="planner.html" aria-current="page">Planner</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn-silver btn-pill" href="contact.html">Let's Talk &nbsp;↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero container">
+      <p class="eyebrow">Stay on top of your studies</p>
+      <h1 class="display silver-text">Academic<br>Planner</h1>
+      <p>Add tasks, tick them off when done and delete the ones you no longer need. Your list is saved in this browser.
+      </p>
+    </section>
+
+    <section class="section container" style="padding-top:24px">
+      <div class="planner-layout">
+        <div>
+          <form id="task-form" class="panel planner-form" novalidate>
+            <div class="full">
+              <label for="task-title">New task</label>
+              <input id="task-title" type="text" placeholder="e.g. Finish COS 106 project" maxlength="120"
+                autocomplete="off" required>
+              <p class="error-msg" id="task-error" role="alert"></p>
+            </div>
+            <div>
+              <label for="task-course">Course</label>
+              <select id="task-course">
+                <option>COS 106</option>
+                <option>GST 111</option>
+                <option>MTH 101</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="task-priority">Priority</label>
+              <select id="task-priority">
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
+            <div style="align-self:end">
+              <button class="btn btn-silver" type="submit">Add task</button>
+            </div>
+          </form>
+
+          <div class="filters" role="group" aria-label="Filter tasks">
+            <button type="button" class="on" data-filter="all">All</button>
+            <button type="button" data-filter="active">Active</button>
+            <button type="button" data-filter="done">Completed</button>
+          </div>
+
+          <ul id="task-list" class="task-list" aria-live="polite"></ul>
+          <p id="empty" class="empty" hidden>No tasks here yet. Add your first one above.</p>
+        </div>
+
+        <aside class="panel summary" aria-label="Task summary">
+          <h2>Summary</h2>
+          <dl>
+            <div class="row">
+              <dt>Total</dt>
+              <dd id="count-total">0</dd>
+            </div>
+            <div class="row">
+              <dt>Pending</dt>
+              <dd id="count-active">0</dd>
+            </div>
+            <div class="row">
+              <dt>Completed</dt>
+              <dd id="count-done">0</dd>
+            </div>
+          </dl>
+          <div class="progress">
+            <div class="skill-top"><span>Progress</span><span id="progress-text">0%</span></div>
+            <div class="bar"><i id="progress-bar" style="width:0"></i></div>
+          </div>
+          <button class="btn btn-ghost" type="button" id="clear-done"
+            style="margin-top:20px;width:100%;justify-content:center">Clear completed</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year">2026</span> Felicity Nguher Iorlaha. All rights reserved.</span>
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="https://github.com/felicitynguheriorlaha-cmd" aria-label="GitHub">Gh</a>
+        <a href="#" aria-label="Instagram">Ig</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

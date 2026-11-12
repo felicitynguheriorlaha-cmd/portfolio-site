@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a323b"/><stop offset="1" stop-color="#11151a"/></linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7d8791"/><stop offset="1" stop-color="#3b434c"/></linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9dde1"/><stop offset="1" stop-color="#9aa2aa"/></linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M120 1000 C130 760 260 700 400 700 C540 700 670 760 680 1000 Z" fill="url(#body)"/>
+  <rect x="345" y="560" width="110" height="170" rx="40" fill="url(#face)"/>
+  <ellipse cx="400" cy="420" rx="150" ry="185" fill="url(#face)"/>
+  <path d="M240 400 C230 200 360 150 440 170 C560 190 575 330 560 410 C530 330 470 290 400 290 C330 290 270 330 240 400 Z" fill="#20262d"/>
+  <text x="400" y="960" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" letter-spacing="6" fill="#aab3bc">REPLACE WITH YOUR PHOTO</text>
+</svg>
